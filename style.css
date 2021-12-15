@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(to left, black, 70% , #220a81);
+}
+
+img {
+    float: right;
+    width: 40%;
+    padding: 0 10px 0 0;
+    animation-name: gray;
+    animation-duration: 1.2s;
+}
+
+
+@keyframes gray {
+    from{
+        filter:grayscale(1);
+    }    
+    to{
+        filter: grayscale(0);
+    }
+}
+
+.quote {
+    display: inline-block;
+    color: white;
+    padding-left: 10px;
+    margin-top: 56px;
+    font-size: 2rem;
+    font-style: italic;
+    inline-size: 11cm;
+    height: auto;
+    background: linear-gradient(to right, red, blue);
+    border-radius: 20px;
+}
+
+
+button{
+    position: relative;
+    margin: 10px;
+    width: 155px;
+    padding: 10px 20px;
+    background-color: grey;
+    color: white;
+    font-size: 18px;
+    border-radius: 117px;
+    text-decoration: none;
+}
+
+#talen{
+    float: right;
+}
+
+#bezoekNu{
+    position: relative; left: 80px;
+}
+
