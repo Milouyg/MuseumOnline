@@ -1,55 +1,74 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+.navigator{
+    padding-top: 10px;
+    margin: 1%;
+    height: 65px;
 }
 
 body {
     min-height: 100vh;
-    background: linear-gradient(to left, black, 70% , #220a81);
+}
+
+.voorPagina{
+    background: linear-gradient(to left, black, 70% , #34689e);
+    height: calc(100vh - 65px);    
+    position: relative;
+    width: 100vw;
+}
+
+.voorPaginaBinnenkant{
+    height: 100%;
+    max-width: 1500px;
+    margin-left: 100px;
+    position: relative;
+}
+
+.voorPaginaLinks{
+  position:absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
 }
 
 img {
-    float: right;
-    width: 40%;
-    padding: 0 10px 0 0;
+    width: 70%;
+    max-width: 100%;
+    max-height: 100%;
     animation-name: gray;
     animation-duration: 1.2s;
+    margin-left: 50%;
+    /* position: absolute; */
+    /* bottom:0;
+    right: 0; */
 }
 
-
-@keyframes gray {
-    from{
-        filter:grayscale(1);
-    }    
-    to{
-        filter: grayscale(0);
-    }
-}
 
 .quote {
+    margin-bottom: 32px;
     display: inline-block;
     color: white;
-    padding-left: 10px;
-    margin-top: 56px;
     font-size: 2rem;
     font-style: italic;
     inline-size: 11cm;
     height: auto;
-    background: linear-gradient(to right, red, blue);
     border-radius: 20px;
+    text-align: left;
 }
 
 
 button{
-    position: relative;
-    margin: 10px;
+    /* position: relative; */
     width: 155px;
     padding: 10px 20px;
     background-color: grey;
     color: white;
     font-size: 18px;
     border-radius: 117px;
-    text-decoration: none;
 }
 
 #talen{
@@ -57,6 +76,19 @@ button{
 }
 
 #bezoekNu{
-    position: relative; left: 80px;
+   /* position: relative; */
+   width: 62%;
+   height: 90px;
+   font-size: 36px;
+   
 }
 
+
+@keyframes gray {
+    from{
+        filter:grayscale(1);
+    }
+    to{
+        filter: grayscale(0);
+    }
+}
