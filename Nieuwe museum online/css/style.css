@@ -1,0 +1,236 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.main{
+    background-color: #141414;
+}
+
+/* Rem staat voor 16px
+Z-index is de volgorde van overlappen van elementen */
+header{
+    background: #131313;
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    /* position: sticky; */
+    top: 0;
+    z-index: 1;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 100px;
+}
+
+#rijksmuseum{
+    background-color: #d55140;
+    background-size: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 15px;
+}
+
+/* .fa-gem{
+    margin: 0.5rem;
+} */
+
+ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    grid-gap: 0 2rem;
+}
+
+.navbar__item{
+    height: 80px;
+}
+
+.navbar__linksBoven{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    height: 100%;
+}
+
+.navbar__linksBoven:hover{
+    color: #d55140;
+    transition: all 0.5s ease;
+}
+
+
+/* Landing page content */
+
+.main{
+    background-color: #141414;
+}
+
+.main__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    height: 90vh;
+    background-color: #141414;
+    z-index: 1;
+    width: 100%;
+    padding: 0 100px;
+    grid-gap: 20px;
+}
+
+.main__content h2{
+    font-size: 4rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.main__content p{
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+}
+
+/* Flex 1 gebruikt alle overige ruimte */
+.main__content{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.main__button{
+    font-size: 2rem;
+    background-image: linear-gradient(to bottom, #db453b 25%, #ff8177 80%);
+    padding: 14px 32px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+}
+
+.main__button a{
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-decoration: none;
+}
+
+.main__button:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #4837ff;
+    transition: all 0,35s;
+    border-radius: 4px;
+}
+
+.main__button:hover{
+    color: white;
+}
+
+.main__button:hover::after{
+    width: 100%;
+}
+
+.main__img--container{
+    text-align: center;
+    height: 100%;
+    max-height: 600px;
+}
+
+#main__img{
+    max-height: 100%;
+}
+
+
+/* Slideshow */
+/* 
+.flex-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    height: 100vh;
+    border: 20px solid red;
+    padding: 20px;
+} */
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+}
+
+.linker_slider, .rechter_slider{
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.linker_slider{
+    background: red;
+}
+
+.main_slideshow {
+    background: #000;
+    display: flex;
+    }
+
+.links_slider.half {
+    float: left; 
+    padding: 20px;
+    }
+
+ 
+.img-box img{
+	width:100%;
+}
+
+.knop{
+	border:none;
+	outline:none;
+	background:#888;
+	padding:10px 30px;
+	font-size: 20px;
+	color:#ddd;
+	cursor: pointer;
+	margin:10px auto;			 
+}
+
+.btn:hover{
+	background: #111;
+}
+
+
