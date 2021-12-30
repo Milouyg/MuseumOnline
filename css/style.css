@@ -233,4 +233,77 @@ img{
 	background: #111;
 }
 
+/* Footer */
 
+.footer {
+    color: white;
+    height: 400px;
+    position: relative;
+    background: rgb(48, 48, 54);
+}
+
+.footer .footer_content {
+    height: 350px;
+    border: 1px solid red;
+    display: flex;
+
+}
+
+.footer .footer_content .footer_section{
+    flex: 1;
+    padding: 20px;
+    border: 1px solid white;
+}
+
+.gegeven:hover{
+    color: #db453b;
+    text-decoration: underline;
+}
+
+.gegeven{
+    padding-top: 10px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.wie_zijn_wij{
+    padding-top: 35px;
+}
+
+label{
+    display: inline-block;
+    width: 55%;
+    font-size: 18px;
+}
+
+.maandag{
+    padding-top: 30px;
+}
+
+.feestdagen{
+    padding-top: 10px;
+}
+
+.contact_text{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.text-box{
+    display: block;
+    
+}
+
+.footer .footer_bottom {
+    color: #686868;
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
+    background: rgb(52, 58, 64);
+}
