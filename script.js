@@ -9,6 +9,7 @@ var img = [
 "melkmeisje5.jpeg"
 ];
 
+
 // De 1ste afbeelding van de index
 var i = 0;
 

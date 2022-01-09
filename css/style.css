@@ -30,7 +30,7 @@ nav{
     z-index: 1;
     width: 100%;
     margin: 0 auto;
-    padding: 0 100px;
+    padding: 0 90px;
 }
 
 #rijksmuseum{
@@ -91,7 +91,7 @@ ul{
     background-color: #141414;
     z-index: 1;
     width: 100%;
-    padding: 0 100px;
+    padding: 0 90px;
     grid-gap: 20px;
 }
 
@@ -183,6 +183,11 @@ ul{
     padding: 20px;
 } */
 
+.tentoonstelling{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
 img{
     max-width: 100%;
     height: auto;
@@ -191,6 +196,7 @@ img{
 .flex-container{
     display: flex;
     justify-content: center;
+    height: 700px;
 }
 
 .linker_slider, .rechter_slider{
@@ -206,7 +212,7 @@ img{
 .main_slideshow {
     background: #000;
     display: flex;
-    }
+}
 
 .links_slider.half {
     float: left; 
@@ -214,8 +220,13 @@ img{
     }
 
  
-.img-box img{
+.img-box{
+    display: flex;
 	width:100%;
+}
+
+.img{
+    align-items: center;
 }
 
 .knop{
@@ -233,14 +244,21 @@ img{
 	background: #111;
 }
 
+.beschrijving_tentoonstelling{
+    text-decoration: none;
+    line-height: 1.5 rem;
+    letter-spacing: 1px;
+    color: black;
+    margin-top: 10px;
+}
+
 /* Reviews */
 
 .review_section{
     margin: auto;
     padding: 15px;
-    max-width: 1100px;
+    max-width: 1200px;
     text-align: center;
-    border: 2px solid red;
 }
 
 .naam_review{
@@ -257,6 +275,8 @@ img{
 .review{
     margin: 0 1rem;
     min-width: 300px;
+    background-color: rgb(238, 238, 238);
+    flex: 1;
 }
 
 .reviews{
@@ -266,7 +286,6 @@ img{
 }
 
 .body_review{
-    background-color: rgb(238, 238, 238);
     padding: 20px;
 }
 
@@ -287,7 +306,6 @@ img{
 }
 
 /* Footer */
-
 .footer {
     color: white;
     height: 400px;
@@ -298,7 +316,6 @@ img{
 .footer .footer_content {
     height: 350px;
     display: flex;
-
 }
 
 .footer .footer_content .footer_section{
@@ -320,7 +337,7 @@ img{
     font-size: 20px;
 }
 
-.wie_zijn_wij{
+.tickets{
     padding-top: 35px;
 }
 
@@ -345,7 +362,8 @@ label{
 
 .text-box{
     display: block;
-    
+    width: 100%;
+    margin: 5px 0;
 }
 
 .footer .footer_bottom {
