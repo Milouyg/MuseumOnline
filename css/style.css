@@ -55,6 +55,7 @@ ul{
     list-style: none;
     text-align: center;
     grid-gap: 0 2rem;
+    padding-right: 105px;
 }
 
 .navbar__item{
@@ -87,11 +88,11 @@ ul{
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    height: 90vh;
+    height: 645px;
     background-color: #141414;
     z-index: 1;
     width: 100%;
-    padding: 0 90px;
+    padding: 0 95px;
     grid-gap: 20px;
 }
 
@@ -107,7 +108,7 @@ ul{
 }
 
 .main__content p{
-    margin-top: 1rem;
+    margin: 10px 0px;
     font-size: 2rem;
     font-weight: 700;
     color: white;
@@ -128,6 +129,7 @@ ul{
     border-radius: 4px;
     color: white;
     margin-top: 2rem;
+    margin-left: 105px;
     cursor: pointer;
     position: relative;
     transition: all 0.35s;
@@ -171,6 +173,10 @@ ul{
     max-height: 100%;
 }
 
+.img_tentoonstelling{
+    margin-left: 65px;
+}
+
 
 /* Slideshow */
 /* 
@@ -185,18 +191,24 @@ ul{
 
 .tentoonstelling{
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 img{
-    max-width: 100%;
+    max-width: 85%;
     height: auto;
+}
+
+.sociale_proof{
+    color: white;
+    padding-top: 10px;
+    font-size: 1rem;
 }
 
 .flex-container{
     display: flex;
     justify-content: center;
-    height: 700px;
+    min-height: 640px;
 }
 
 .linker_slider, .rechter_slider{
@@ -249,11 +261,10 @@ img{
     line-height: 1.5 rem;
     letter-spacing: 1px;
     color: black;
-    margin-top: 10px;
+    margin: 10px 10px 0px 30px;
 }
 
 /* Reviews */
-
 .review_section{
     margin: auto;
     padding: 15px;
@@ -266,17 +277,12 @@ img{
     color: rgb(50, 50, 50);
 }
 
-.note{
-    font-size: 1.1rem;
-    color: rgb(150, 150, 150);
-    font-style: italic;
-}
-
 .review{
     margin: 0 1rem;
     min-width: 300px;
     background-color: rgb(238, 238, 238);
     flex: 1;
+    border-radius: 40px;
 }
 
 .reviews{
@@ -296,7 +302,7 @@ img{
 
 .rating{
     color: rgb(253, 180, 42);
-    margin: 1rem 0;
+    margin: 10px;
 }
 
 .beschrijving{
@@ -308,20 +314,19 @@ img{
 /* Footer */
 .footer {
     color: white;
-    height: 400px;
+    height: 365px;
     position: relative;
     background: rgb(48, 48, 54);
 }
 
 .footer .footer_content {
-    height: 350px;
+    height: 315px;
     display: flex;
 }
 
 .footer .footer_content .footer_section{
     flex: 1;
-    padding: 20px;
-    border: 1px solid white;
+    padding: 30px;
 }
 
 .gegeven:hover{
@@ -343,7 +348,7 @@ img{
 
 label{
     display: inline-block;
-    width: 55%;
+    width: 60%;
     font-size: 18px;
 }
 

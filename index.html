@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="css/style.css">
-    <!-- --------------Javascript------------------------------ -->
-    <script href="text/javascript" src=""></script>
+     <!-- --------------Font Awesome------------------------------ -->
+     <script src="https://kit.fontawesome.com/60a7472f67.js" crossorigin="anonymous"></script>
     <title>Museum Online</title>
 </head>
 
@@ -33,16 +33,18 @@
         <div class="main__container">
             <div class="main__content">
                 <div class="styling">
-                    <h2 class="titel_quote">QUOTE</h2>
                     <p>
                         Het hart is een museum. 
                         Gevuld met verzamelingen van levenslange liefdes.
                    </p>
-                    <button class="main__button"><a href="https://www.rijksmuseum.nl/nl/tickets/artikelen">Bezoek Nu</a></button>
+                    <button class="main__button"><a href="https://www.rijksmuseum.nl/nl/bezoek">Bezoek Nu</a></button>
                 </div>
             </div>
             <div class="main__img--container">
                 <img src="img/nachtwacht.png" alt="Nachtwacht" id="main__img">
+                <p class="sociale_proof">
+                    Dankzij de viering van het Jaar van Rembrand 2019 verwelkomt het museum dit jaar in totaal 2.7 miljoen bezoekers
+                </p>
             </div>
         </div>
     </div>
@@ -54,17 +56,9 @@
 
 <!-- tentoonstelling -->
         <div class="rechter_slider"> 
-            <!-- <div class="slider">
-                <div class="img_box">
-                    <img src="img/zwaan1.jpeg" class="slider-img">
-                </div> -->
-                <!-- !-Knoppen maken --> 
-                 <!-- <button class="knop" onclick="prev()">Vorige</button>
-                <button class="knop" onclick="next()">Volgende</button>
-            </div> -->
             <h2 class="tentoonstelling">Tentoonstelling</h2>
             <div class="img_box">
-               <img src="img/Eregalerij.png" width="800px" height="400px" alt="Je ziet de Eregalerij"> 
+               <img class="img_tentoonstelling" src="img/Eregalerij.png" alt="Je ziet de Eregalerij"> 
             </div>
             <p class="beschrijving_tentoonstelling">
             De tentoonstellingen die momenteel gegeven worden, zijn:
@@ -78,13 +72,8 @@
     </main>
     
   <!-- reviews -->
-   
     <div class="review_section">
         <h2 class="titel_review"> Reviews</h2>
-        <p class="note">
-            Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. 
-            Lorem Ipsum is de standaard proeftekst in deze bedrijfstak sinds de 16e eeuw
-        </p>
         <div class="reviews">
         <div class="review">
             <div class="body_review">
@@ -110,17 +99,19 @@
 
         <div class="review">
             <div class="body_review">
-                <div class="naam_review">Verena</div>
-                <div class="date_review"> aug. 2021</div>
+                <div class="naam_review">Maaike</div>
+                <div class="date_review"> Okt. 2021</div>
                 <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
                 <div class="beschrijving">
-                    Je moet wel heel erg van oude foto's houden om deze expositie leuk te vinden. 
-                    Ik vond het weinig bijzonder en saai. Misschien interessant voor jongere mensen die niet meer beschikken over familiefoto's aan het begin van de vorige eeuw. 
-                    Gelukkig kon ik bij de small wonders expositie meer mijn hart ophalen. 
-                    Daar kunt u wat mij betreft met een gerust hart naar toe gaan.
+                    Het familiespel is een aanrader: het kon onze kinderen die minder dan zijn van musea boeien. 
+                    Goed opgebouwd, elke speler zijn bijdrage. 
+                    Let wel: het gaat maar over een (klein)deel van het museum, je hebt er niet het hele museum met doorkruist.
+                    Noot: het museum sluit om 17 uur, starten om 15:45 is wat krap
                 </div>
             </div>
         </div>
@@ -139,18 +130,12 @@
                     Beetje onduidelijk met de tentoonstelling en de tijd van je ticket waaraan het verbonden was.
                     Daarbij viel de slavernij tentoonstelling wat tegen, maar misschien had ik er te hoge verwachtingen van.
                 </div>
-            </div>
-
-            
+            </div>   
         </div>
         </div>
-
     </div>
     
-
-
     <!-- Footer -->
-
     <div class="footer">
         <div class="footer_content">
             <div class="footer_section gegevens">
@@ -163,8 +148,6 @@
             </div>
             <div class="footer_section openingsTijden">
                 <h2>Openingstijden</h2>
-                <ol>
-                    
                     <label  class="maandag">Maandag:</label> <span> 09:00 - 17:00</span>
                     <label>Dinsdag:</label> <span> 09:00 - 17:00</span>
                     <label>Woensdag:</label> <span> 09:00 - 17:00</span>
@@ -173,7 +156,6 @@
                     <label>Zaterdag:</label> <span> 09:00 - 17:00</span>
                     <label>Zondag:</label> <span> 09:00 - 17:00</span>
                     <label class="feestdagen">Ook op alle feestdagen zijn wij open:</label> <span> 09:00 - 17:00</span>
-                </ol>
             </div>
             <div class="footer_section contact">
                 <h2>Contact ons</h2>
@@ -181,7 +163,7 @@
                 
                 </p>
                 <div class="form">
-                    <form class="contact_form" action="" method="post">
+                    <form class="contact_form" method="post">
                         <input type="text" name="name" class="text-box" placeholder="Naam" required>
                         <input type="email" class="text-box" placeholder="E-mail" required>
                         <textarea class="text-box" name="message" cols="30" rows="5" placeholder="Bericht" required></textarea>
