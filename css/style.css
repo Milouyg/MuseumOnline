@@ -177,6 +177,54 @@ ul{
     margin-left: 65px;
 }
 
+.tentoonstelling__button{
+    font-size: 2rem;
+    background-image: linear-gradient(to bottom, #db453b 25%, #ff8177 80%);
+    padding: 14px 32px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    margin-top: 4rem;
+    margin-left: 265px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+}
+
+.tentoonstelling__button a{
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-decoration: none;
+}
+
+.tentoonstelling__button a{
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-decoration: none;
+}
+
+.tentoonstelling__button:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #4837ff;
+    transition: all 0,35s;
+    border-radius: 4px;
+}
+
+.tentoonstelling__button:hover{
+    color: white;
+}
+
+.tentoonstelling__button:hover::after{
+    width: 100%;
+}
 
 /* Slideshow */
 /* 
