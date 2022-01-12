@@ -49,7 +49,7 @@ nav{
     margin: 0.5rem;
 } */
 
-ul{
+.navbar{
     display: flex;
     align-items: center;
     list-style: none;
@@ -184,7 +184,7 @@ ul{
     border: none;
     border-radius: 4px;
     color: white;
-    margin-top: 4rem;
+    margin-top: 1rem;
     margin-left: 265px;
     cursor: pointer;
     position: relative;
@@ -225,17 +225,6 @@ ul{
 .tentoonstelling__button:hover::after{
     width: 100%;
 }
-
-/* Slideshow */
-/* 
-.flex-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    height: 100vh;
-    border: 20px solid red;
-    padding: 20px;
-} */
 
 .tentoonstelling{
     text-align: center;
@@ -312,6 +301,14 @@ img{
     margin: 10px 10px 0px 30px;
 }
 
+.ul_tentoonstelling{
+    text-decoration: none;
+    line-height: 1.5 rem;
+    letter-spacing: 1px;
+    color: black;
+    margin: 5px 0px 5px 47px;
+}
+
 /* Reviews */
 .review_section{
     margin: auto;
@@ -344,7 +341,7 @@ img{
 }
 
 .date_review{
-    color: red;
+    color: rgb(150, 150, 150);
     font-style: italic;
 }
 
