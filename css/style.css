@@ -156,20 +156,21 @@ nav{
     text-decoration: none;
 }
 
-.main__button:after {
+/* .main__button:after {
     position: absolute;
     content: '';
     top: 0;
     left: 0;
     width: 0;
     height: 100%;
-    background: #4837ff;
+    background: white;
     transition: all 0,35s;
     border-radius: 4px;
-}
+} */
 
 .main__button:hover{
-    color: white;
+    color: black;
+    top: 3px;
 }
 
 .main__button:hover::after{
@@ -220,7 +221,7 @@ nav{
     text-decoration: none;
 }
 
-.tentoonstelling__button:after {
+/* .tentoonstelling__button:after {
     position: absolute;
     content: '';
     top: 0;
@@ -230,10 +231,11 @@ nav{
     background: #4837ff;
     transition: all 0,35s;
     border-radius: 4px;
-}
+} */
 
 .tentoonstelling__button:hover{
-    color: white;
+    color: black;
+    top: 3px;
 }
 
 .tentoonstelling__button:hover::after{
@@ -296,14 +298,14 @@ body h4{
     grid-template-columns: repeat(2,minmax(100px,1fr));
     grid-gap: 20px;
     padding: 20px;
-    background-color: #141414;
+    background-color: white;
     min-height: 610px;
 }
 
 .container .box{
     position: relative;
     height: 250px;
-    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 25%);
     overflow: hidden;
     border-radius: 10px;
     text-align: center;
@@ -340,7 +342,7 @@ body h4{
 .container .box h4{
     font-size: 15px;
     position: relative;
-    color: #b8b1b8;
+    color: black;
 }
 
 .container .box:hover h4{
@@ -350,7 +352,7 @@ body h4{
 .container .box p{
     font-size: 14px;
     position: relative;
-    color: #b8b1b8;
+    color: black;
 }
 
 .container .box:hover p{
@@ -391,7 +393,7 @@ body h4{
 }
 
 .beschrijving_tentoonstelling_onder{
-    margin: 10px 10px 25px 30px;
+    margin: 10px 10px 50px 30px;
 }
 
 .ul_tentoonstelling{
@@ -499,7 +501,6 @@ label{
 }
 
 .contact_text{
-    padding-top: 20px;
     padding-bottom: 20px;
 }
 
@@ -507,6 +508,11 @@ label{
     display: block;
     width: 100%;
     margin: 5px 0;
+    padding: 5px 10px;
+}
+
+.verzend_btn{
+    padding: 5px 10px;
 }
 
 .footer .footer_bottom {
