@@ -5,6 +5,18 @@
     font-family: 'Kumbh Sans', sans-serif;
 }
 
+.clearfix::before {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .main{
     background-color: #141414;
 }
@@ -88,7 +100,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    height: 645px;
+    height: calc(100vh - 80px);
     background-color: #141414;
     z-index: 1;
     width: 100%;
@@ -108,7 +120,7 @@ nav{
 }
 
 .main__content p{
-    margin: 10px 0px;
+    margin: 50px 0px;
     font-size: 2rem;
     font-weight: 700;
     color: white;
@@ -134,6 +146,7 @@ nav{
     position: relative;
     transition: all 0.35s;
     outline: none;
+    text-decoration: none;
 }
 
 .main__button a{
@@ -170,7 +183,7 @@ nav{
 }
 
 #main__img{
-    max-height: 100%;
+    max-height: 85%;
 }
 
 .img_tentoonstelling{
@@ -190,6 +203,7 @@ nav{
     position: relative;
     transition: all 0.35s;
     outline: none;
+    text-decoration: none;
 }
 
 .tentoonstelling__button a{
@@ -295,10 +309,9 @@ img{
 
 .beschrijving_tentoonstelling{
     text-decoration: none;
-    line-height: 1.5 rem;
     letter-spacing: 1px;
     color: black;
-    margin: 10px 10px 0px 30px;
+    margin: 10px 10px 10px 30px;
 }
 
 .ul_tentoonstelling{
