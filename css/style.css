@@ -269,7 +269,7 @@ img{
 }
 
 .linker_slider{
-    background: red;
+    /* background: red; */
 }
 
 .main_slideshow {
@@ -280,9 +280,85 @@ img{
 .links_slider.half {
     float: left; 
     padding: 20px;
-    }
+}
 
- 
+/* Geschiedenis */
+body h4{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.8);
+    color: #b8b1b8;
+}
+
+.container{
+    width: 750px;
+    display: grid;
+    grid-template-columns: repeat(2,minmax(100px,1fr));
+    grid-gap: 20px;
+    padding: 20px;
+    background-color: #141414;
+    min-height: 610px;
+}
+
+.container .box{
+    position: relative;
+    height: 250px;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container .box::before{
+    position: absolute;
+    content: "";
+    top: 99%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-image: linear-gradient(315deg,#910000 0%, #d80505, #fc2323 74%);
+    transition: 0.4s;
+}
+
+.container .box:hover::before{
+    top: 50%; 
+}
+
+.container .box .imgbox{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.container .box .imgbox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .box h4{
+    font-size: 15px;
+    position: relative;
+    color: #b8b1b8;
+}
+
+.container .box:hover h4{
+    color: #fff;
+}
+
+.container .box p{
+    font-size: 14px;
+    position: relative;
+    color: #b8b1b8;
+}
+
+.container .box:hover p{
+    color: #fff;
+}
+
+
+/* Tentoonstelling  */
 .img-box{
     display: flex;
 	width:100%;
@@ -312,6 +388,10 @@ img{
     letter-spacing: 1px;
     color: black;
     margin: 10px 10px 10px 30px;
+}
+
+.beschrijving_tentoonstelling_onder{
+    margin: 10px 10px 25px 30px;
 }
 
 .ul_tentoonstelling{
