@@ -178,9 +178,10 @@ nav{
 }
 
 .main__img--container{
-    text-align: center;
-    height: 100%;
-    max-height: 600px;
+    background-size: cover;
+    animation-name: fotoslider;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
 }
 
 #main__img{
@@ -525,4 +526,79 @@ label{
     left: 0px;
     padding-top: 20px;
     background: rgb(52, 58, 64);
+}
+
+/* FOTOSLIDER */
+figure{
+    width: 60%;
+    height: 500px;
+    padding: 14px 32px;
+    position: relative;
+    left: 300px;
+    border-radius: 5px;
+    background: brown;
+    background-size: cover;
+    animation-name: fotoslider;
+    animation-duration: 30s;
+    animation-iteration-count: infinite
+}
+ /* FOTOSLIDER EINDE */
+
+ /* FOTOSLIDER ANIMATIE */
+
+@keyframes fotoslider{
+    0%{
+        opacity: 0;
+        background-image: url("../img/foto1.png")
+    }
+    12.5%{
+        opacity: 1;
+        background-image: url("../img/foto1.png");
+    }
+    24%{
+        opacity: 0;
+        background-image: url("../img/foto1.png");
+    }
+    25%{
+        opacity: 0;
+        background-image: url("../img/foto2.png");
+    }
+    37.5%{
+        opacity: 1;
+        background-image: url("../img/foto2.png");
+    }
+    49%{
+        opacity: 0;
+        background-image: url("../img/foto2.png");
+    }
+    50%{
+        opacity: 0;
+        background-image: url("../img/foto3.png")
+    }
+    62.5%{
+        opacity: 1;
+        background-image: url("../img/foto3.png")
+    }
+    74%{
+        opacity: 0;
+        background-image: url("../img/foto3.png")
+    }
+    75%{
+        opacity: 0;
+        background-image: url("../img/foto4.png");
+
+    }
+    87.5%{
+        opacity: 1;
+        background-image: url("../img/foto4.png");
+    }
+    99%{
+        opacity: 0;
+        background-image: url("../img/foto4.png");
+    }
+    100%{
+        opacity: 0;
+        background-image: url("../img/foto5.png");
+
+    }
 }
