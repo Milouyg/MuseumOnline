@@ -534,13 +534,13 @@ figure{
     height: 500px;
     padding: 14px 32px;
     position: relative;
-    left: 300px;
     border-radius: 5px;
     background: brown;
     background-size: cover;
     animation-name: fotoslider;
     animation-duration: 30s;
-    animation-iteration-count: infinite
+    animation-iteration-count: infinite;
+    min-height: 400px;
 }
  /* FOTOSLIDER EINDE */
 
