@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #181c27;
+    height: 100vh;
+}
+
+.mainContainer{
+    position: relative;
+    background-color: wheat;
+    margin: 4% auto;
+    height: 750px;
+    width: 900px;
+    border: 10px solid;
+    padding: 5px;
+}
+
+img{
+    display: block;
+}
+
+figcaption{
+    text-align: center;
+}
+
+figure{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tekstPositie{
+    padding: 15px 0 0 10px;
+}
+
+.tekstPositie > p{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+button{
+    margin: 5px;
+    padding: 5px 10px 5px 10px;
+    text-transform: uppercase;
+}
+
+#myInput{
+    display: block;
+    margin-top: 5px;
+}
+
+.input{
+    margin-top: 10px;
+    width: 50%;
+}
+
+.Rechts{
+    width: 50%;
+}
+
+#mogelijkheden > li{
+    margin-left: 20px;
+    padding: 0px 0 0 5px;
+    width: 50%;
+}
+
