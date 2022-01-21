@@ -25,6 +25,9 @@ img{
 
 figcaption{
     text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px;
 }
 
 figure{
@@ -48,6 +51,7 @@ button{
     margin: 5px;
     padding: 5px 10px 5px 10px;
     text-transform: uppercase;
+    border-radius: 10px;
 }
 
 #myInput{
@@ -69,4 +73,5 @@ button{
     padding: 0px 0 0 5px;
     width: 50%;
 }
+
 
