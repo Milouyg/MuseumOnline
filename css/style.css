@@ -42,7 +42,7 @@ nav{
     z-index: 1;
     width: 100%;
     margin: 0 auto;
-    padding: 0 90px;
+    padding: 0 6%;
 }
 
 #rijksmuseum{
@@ -67,7 +67,7 @@ nav{
     list-style: none;
     text-align: center;
     grid-gap: 0 2rem;
-    padding-right: 105px;
+    padding: 0 5% 0 0;
 }
 
 .navbar__item{
@@ -90,10 +90,6 @@ nav{
 
 
 /* Landing page content */
-
-.main{
-    background-color: #141414;
-}
 
 .main__container{
     display: flex;
@@ -136,12 +132,11 @@ nav{
 .main__button{
     font-size: 2rem;
     background-image: linear-gradient(to bottom, #db453b 25%, #ff8177 80%);
-    padding: 14px 32px;
+    padding: 3% 5%;
     border: none;
     border-radius: 4px;
     color: white;
-    margin-top: 2rem;
-    margin-left: 105px;
+    margin: 32px 0 0 105px;
     cursor: pointer;
     position: relative;
     transition: all 0.35s;
@@ -266,13 +261,9 @@ img{
 }
 
 .linker_slider, .rechter_slider{
-    width: 50%;
+    width: 100%;
     padding: 10px;
     margin: 10px 0;
-}
-
-.linker_slider{
-    /* background: red; */
 }
 
 .main_slideshow {
@@ -294,7 +285,7 @@ body h4{
 }
 
 .container{
-    width: 750px;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2,minmax(100px,1fr));
     grid-gap: 20px;
@@ -601,4 +592,65 @@ figure{
         background-image: url("../img/foto5.png");
 
     }
+}
+
+@media screen and (max-width:1000px) {
+
+    nav{
+        padding: 0;
+    }
+
+    ul.navbar{
+        flex-wrap: wrap;
+        grid-gap: 5px;
+    }
+
+    .navbar__linksBoven {
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        height: 100%;
+        display: block;
+    }
+
+    .main__container{
+        height: calc(200vh - 80px);
+        padding: 0 20px;
+    }
+
+    .main__container p{
+        font-size: 20px;
+    }
+
+    .main__button{
+        font-size: 25px;
+        margin: 0px 0 0 0px;
+    }
+
+    figure{
+        padding: 0px;
+        width: 60%;
+        height: 20px;
+        min-height: 130px;
+    }
+
+    .flex-container{
+        flex-wrap:wrap;
+    }
+    .reviews{
+        flex-wrap:wrap;
+        gap:20px;
+    }
+
+    .footer .footer_content .footer_section{
+        padding: 15px;
+    }
+
+    .footer_content{
+        flex-wrap: wrap;
+        gap: none;
+    }
+
 }
